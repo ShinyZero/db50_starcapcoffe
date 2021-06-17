@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="Default.aspx">Registrar Cliente</a>
-        <a class="nav-link" href="VerCliente.aspx">Ver Clientes</a>
+        <a class="nav-link" href="VerClientes.aspx">Ver Clientes</a>
         <a class="nav-link" href="RegistrarVentas.aspx">Registrar Ventas</a>
       </div>
     </div>
