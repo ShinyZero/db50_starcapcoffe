@@ -15,14 +15,22 @@
                     <div class="mb-3">
                         <label class="form-label" for="NombreTxt">Nombre</label>
                         <asp:TextBox runat="server" ID="NombreTxt" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                            ErrorMessage="Debe ingresar el nombre" CssClass="text-danger"
+                            ControlToValidate="NombreTxt">
+                        </asp:RequiredFieldValidator>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="RutTxt">RUT</label>
                         <asp:TextBox runat="server" ID="RutTxt" CssClass="form-control"></asp:TextBox>
+                        <asp:CustomValidator ID="rutCV" runat="server" ErrorMessage="CustomValidator"
+                            CssClass="text-danger" ControlToValidate="RutTxt" OnServerValidate="rutCV_ServerValidate"
+                            ValidateEmptyText="true"
+                            ></asp:CustomValidator>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="CafeDd1">Cafe Favorito</label>
-                        <asp:DropDownList runat="server" ID="CafeDd1" CssClass="form-select"></asp:DropDownList>
+                        <label class="form-label" for="bebidaDd1">Cafe Favorito</label>
+                        <asp:DropDownList runat="server" ID="bebidaDd1" CssClass="form-select"></asp:DropDownList>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="TipoRd1">Tipo de Cliente</label>
@@ -34,7 +42,8 @@
                     </div>
                 </div>
                 <div class="card-footer d-grid gap-1">
-                    <asp:Button runat="server" ID="GuardarBtn" CssClass="btn btn-dark" Text="Registrar" />
+                    <asp:Button runat="server" ID="IngresarBtn" CssClass="btn btn-dark" Text="Crear Cliente"
+                        OnClick="IngresarBtn_Click"/>
                 </div>
             </div>
         </div>

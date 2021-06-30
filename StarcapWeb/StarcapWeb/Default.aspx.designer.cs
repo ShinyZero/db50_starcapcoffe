@@ -22,6 +22,15 @@ namespace StarcapWeb {
         protected global::System.Web.UI.WebControls.TextBox NombreTxt;
         
         /// <summary>
+        /// Control RequiredFieldValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// Control RutTxt.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,22 @@ namespace StarcapWeb {
         protected global::System.Web.UI.WebControls.TextBox RutTxt;
         
         /// <summary>
-        /// Control CafeDd1.
+        /// Control rutCV.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CafeDd1;
+        protected global::System.Web.UI.WebControls.CustomValidator rutCV;
+        
+        /// <summary>
+        /// Control bebidaDd1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList bebidaDd1;
         
         /// <summary>
         /// Control TipoRd1.
@@ -49,12 +67,12 @@ namespace StarcapWeb {
         protected global::System.Web.UI.WebControls.RadioButtonList TipoRd1;
         
         /// <summary>
-        /// Control GuardarBtn.
+        /// Control IngresarBtn.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GuardarBtn;
+        protected global::System.Web.UI.WebControls.Button IngresarBtn;
     }
 }
