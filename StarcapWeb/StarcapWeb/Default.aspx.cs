@@ -21,7 +21,7 @@ namespace StarcapWeb
                 //Indica que se va a mostrar en el dropdownlist
                 bebidaDd1.DataTextField = "Nombre";
                 //Indica que se va a obtener en el dropdownlist
-                bebidaDd1.DataTextField = "Codigo";
+                bebidaDd1.DataValueField = "Codigo";
                 //refresaca o actualiza el dropdownlist
                 bebidaDd1.DataBind();
 
@@ -33,12 +33,35 @@ namespace StarcapWeb
             if (Page.IsValid)
             {
                 //en el caso de que la pagina sea valida (cumple con las validaciones)
-
+                //recuperar valores del formulario
+                string nombre = NombreTxt.Text.Trim();
+                String rut = RutTxt.Text.Trim();
+                String codigoBebida = bebidaDd1.SelectedValue;
+                int nivel = Convert.ToInt32(NivelRd1.SelectedValue);
+                //Crear objeto
+                Cliente c = new Cliente();
+                c.Nombre = nombre;
+                c.Rut = rut;
+                c.CodigoBebida = codigoBebida;
+                c.Nivel = nivel;
+                //Guardar la lista
+                new ClienteDAL().Add(c);
+                //Mostroar mensaje de confirmacion
+                mensajeLbl.Text = "Cliente Ingresado";
+                limpiar();
             }
             else
             {
 
             }
+        }
+
+        private void limpiar()
+        {
+            NombreTxt.Text = "";
+            RutTxt.Text = "";
+            bebidaDd1.SelectedIndex = 0;
+            NivelRd1.SelectedIndex = 0;
         }
 
         protected void rutCV_ServerValidate(object source, ServerValidateEventArgs args)

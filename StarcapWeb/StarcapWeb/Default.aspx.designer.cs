@@ -13,6 +13,15 @@ namespace StarcapWeb {
     public partial class Default {
         
         /// <summary>
+        /// Control mensajeLbl.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label mensajeLbl;
+        
+        /// <summary>
         /// Control NombreTxt.
         /// </summary>
         /// <remarks>
@@ -58,13 +67,13 @@ namespace StarcapWeb {
         protected global::System.Web.UI.WebControls.DropDownList bebidaDd1;
         
         /// <summary>
-        /// Control TipoRd1.
+        /// Control NivelRd1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList TipoRd1;
+        protected global::System.Web.UI.WebControls.RadioButtonList NivelRd1;
         
         /// <summary>
         /// Control IngresarBtn.

@@ -5,6 +5,11 @@
             margin-left: 10px;
         }
     </style>
+    <div>
+        <asp:Label ID="mensajeLbl" CssClass="text-success h1" runat="server"></asp:Label>
+    </div>
+
+
     <div class="row mt-5">
         <div class="col-12 col-md-6 col-lg-5 mx-auto">
             <div class="card">
@@ -33,8 +38,8 @@
                         <asp:DropDownList runat="server" ID="bebidaDd1" CssClass="form-select"></asp:DropDownList>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="TipoRd1">Tipo de Cliente</label>
-                        <asp:RadioButtonList runat="server" ID="TipoRd1">
+                        <label class="form-label" for="NivelRd1">Nivel de Cliente</label>
+                        <asp:RadioButtonList runat="server" ID="NivelRd1" CssClass="form-control">
                             <asp:ListItem Value="1" Text="Silver" Selected="True"></asp:ListItem>
                             <asp:ListItem Value="2" Text="Gold"></asp:ListItem>
                             <asp:ListItem Value="3" Text="Platinum"></asp:ListItem>
