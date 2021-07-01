@@ -14,7 +14,7 @@
                     <ItemTemplate>
                         <asp:Button ID="Button1" runat="server" Text="Sacar del Programa"
                             CssClass="btn btn-danger" CommandName="eliminar"
-                            CommnadArgument='<%# Eval("Rut")%>'/>
+                            CommandArgument='<%# Eval("Rut")%>'/>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
