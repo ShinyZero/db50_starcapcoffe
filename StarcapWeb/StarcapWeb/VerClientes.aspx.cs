@@ -38,5 +38,24 @@ namespace StarcapWeb
                 CargarTabla(clientesDAL.GetAll());
             }
         }
+
+        protected void nivelRd1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            System.Threading.Thread.Sleep(3000);
+            int nivelSel = Convert.ToInt32(nivelRd1.SelectedValue);
+            //filtrar
+            List<Cliente> filtrada = clientesDAL.GetAll(nivelSel);
+            CargarTabla(filtrada);
+        }
+
+        protected void todosChx_CheckedChanged(object sender, EventArgs e)
+        {
+            nivelRd1.Enabled = !todosChx.Checked;
+
+            if (todosChx.Checked)
+            {
+                CargarTabla(clientesDAL.GetAll());
+            }
+        }
     }
 }
